@@ -10,7 +10,6 @@ from streamlit_plotly_events import plotly_events
 import os
 from glob import glob
 from streamlit_image_annotation import detection
-from src.vol_to_vol import project_bbox_from_axial
 from monai.utils import first, set_determinism
 from monai.networks.nets import vista3d132
 from monai.transforms import Orientation
