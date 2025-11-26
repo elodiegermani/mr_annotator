@@ -9,3 +9,4 @@ streamlit-plotly-events
 streamlit_image_annotation
 pydicom
 pillow
+scipy
