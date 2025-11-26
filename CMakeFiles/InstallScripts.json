@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/egermani/Documents/deepseg-endo/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
