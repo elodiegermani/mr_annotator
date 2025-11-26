@@ -10,3 +10,6 @@ streamlit_image_annotation
 pydicom
 pillow
 scipy
+scikit-image
+scikit-learn
+opencv-python
