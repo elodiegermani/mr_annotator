@@ -2,11 +2,11 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import os
-import cv2
+from skimage.transform import resize
 
 def draw_masks(img, masks, show_seg=True): 
     masked_image = np.asarray(img).copy() 
-    masked_image = cv2.resize(masked_image, (512, 512))
+    masked_image = resize(masked_image, (512, 512))
     img_size = masked_image.shape
     if np.max(masked_image) <= 10: 
         masked_image = masked_image * 255 
