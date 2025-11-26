@@ -1,9 +1,6 @@
 import streamlit as st
 import numpy as np
 import nibabel as nib
-import plotly.graph_objects as go
-import plotly.express as px
-import matplotlib.pyplot as plt
 import pandas as pd
 import tempfile
 from pathlib import Path
@@ -11,7 +8,6 @@ from PIL import Image
 import io 
 from streamlit_plotly_events import plotly_events
 import os
-import torch
 from glob import glob
 from streamlit_image_annotation import detection
 from src.vol_to_vol import project_bbox_from_axial
