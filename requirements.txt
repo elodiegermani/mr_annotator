@@ -1,3 +1,4 @@
+opencv-python
 monai
 nibabel
 numpy
@@ -12,4 +13,3 @@ pillow
 scipy
 scikit-image
 scikit-learn
-opencv-python

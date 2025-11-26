@@ -93,17 +93,5 @@ def draw_masks(img, masks, show_seg=True):
     masked_image = np.repeat(masked_image[:, :, np.newaxis], 3, axis=2) 
     bbox_dict = None
     masks_refined = {}
-
-    if masks: 
-        bbox_dict = {}
-        for n, (organ, mask) in enumerate(masks.items()): 
-            refined = np.asarray(mask, dtype=np.uint8) 
-            refined = clean_mask_basic(mask) 
-            #refined = edge_snap_guided(masked_image, refined) 
-            refined = refine_random_walker(masked_image, refined) 
-            bbox_dict[organ] = bbox2d_from_mask(refined)
-            masks_refined[organ] = refined
-            if show_seg:
-                masked_image[refined>1] = masked_image[refined>1] * 0.7 + colors[organ] * 0.3 
-
+    
     return masked_image, bbox_dict, masks_refined
