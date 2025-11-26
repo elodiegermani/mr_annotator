@@ -8,7 +8,7 @@ from skimage.segmentation import random_walker
 from skimage.filters import sobel
 import os
 from skimage import morphology
-
+from src.mask import draw_masks
 
 def make_heatmap(slice2d: np.ndarray, title: str, colorscale: str, 
     view: str = 'axial', seg_slice: np.ndarray | None = None, labels: list[int] | None = None,
